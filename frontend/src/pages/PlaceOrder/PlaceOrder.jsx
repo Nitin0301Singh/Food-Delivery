@@ -5,7 +5,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
-
 const PlaceOrder = () => {
 
     const {getTotalCartAmount,token,food_list,cartItems,url}=useContext(StoreContext)
@@ -49,14 +48,7 @@ const PlaceOrder = () => {
         window.location.replace(session_url);
        }
        else{
-        // alert("Error");
-        const r=prompt("Enter your card number/UPI ID:");
-        if(r){
-          alert("Payment Successfull");
-        }
-        else{
-          alert("Try Again!");
-        }
+        alert("Error");
        }
     }
 

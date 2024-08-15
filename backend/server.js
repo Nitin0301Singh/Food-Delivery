@@ -6,7 +6,6 @@ import userRouter from "./routes/userRoute.js";
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
-import Razorpay from "razorpay"
 
 // app config
 const app = express();
@@ -30,10 +29,6 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-export const instance=new Razorpay({
-  key_id:process.env.RAZORPAY_API_KEY,
-  key_secret:process.env.RAZORPAY_API_SECRET,
-});
 
 app.listen(port,()=>{
     console.log(`Server Started on http://localhost:${port}`);

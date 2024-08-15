@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
       <div className="footer-content-left">
        <img src={assets.logo} alt="" />
-       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tempora, nobis facere vel minima, totam aliquid reprehenderit placeat similique deserunt voluptatum id laborum sunt officiis provident! Eius eligendi doloremque id. Fuga molestias corporis architecto!</p>
+       <p><b>TOMATO</b> brings your favorite meals right to your doorstep with just a few taps. Discover a wide range of local and international cuisines, from gourmet dishes to comfort foods, all delivered quickly and conveniently. Enjoy delicious, fresh meals without leaving your home—order now and experience the ultimate in convenience and flavor!</p>
        <div className="footer-social-icons">
        <img src= {assets.facebook_icon} alt="" />
        <img src= {assets.twitter_icon} alt="" />
@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 &copy; Tomato.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 &copy; Tomato.com - All Rights Reserved.</p>
     </div>
   )
 }
