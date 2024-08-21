@@ -6,7 +6,8 @@ const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
 
 // placing user order from frontend
 const placeOrder = async (req, res) =>  {
-  const frontend_url = "http://localhost:5174";  
+  const flag2=true;
+  const frontend_url =(flag2)?"https://food-delivery-frontend-1hbd.onrender.com": "http://localhost:5174"; 
 
   try {
     const newOrder = new orderModel({
